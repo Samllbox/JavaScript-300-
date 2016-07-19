@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8">
+<title>动态关闭页面</title>
+	<script>
+    	function closeWin(){
+			window.close();
+			}
+    </script>
+</head>
+
+<body>
+	<p>
+    	<!--定义关闭窗口按钮-->
+        <input type="button" value="关闭此窗口" onClick="closeWin()">
+    </p>
+</body>
+</html>
