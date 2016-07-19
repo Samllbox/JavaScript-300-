@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>自动刷新页面</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script>
+      //刷新网页的函数
+      function fresh(){
+        window.location.reload();//调用location的reload函数
+      }
+      setTimeout('fresh()',5000)
+    </script>
+  </head>
+  <body>
+    <p>网页自动刷新中</p>
+  </body>
+</html>
