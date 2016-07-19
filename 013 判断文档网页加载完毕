@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>文档和网页加载完毕</title>
+<script>
+	//加载完成后的回调函数
+	function myOnload(){
+		alert('网页加载完毕')
+		}
+	//使用window的onload元素进行回调
+	window.onload = myOnload;
+	//文档加载完后的回调
+	document.onreadystatechange = myPageLoad;
+	//定义回调函数
+	function myPageLoad(){
+		if(document.readyState == "complete"){
+			alert('文档加载完毕');
+			}
+		}
+</script>
+</head>
+
+<body>
+kj
+</body>
+</html>
