@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" http-equiv="content-type" content="text/html">
+<title>页面载入等待界面</title>
+<script type="text/javascript">
+	function submitForm(){
+		var doing = document.getElementById('doing');
+		doing.style.display = '';
+		self.location.reload();
+		}	
+</script>
+</head>
+
+<body style="text-align:center">
+	<!--友好提示界面层-->
+    <div id="doing";
+    	style="z-index:99; 
+        left:0px; 
+        top:0px; 
+        display:none; 
+        width:100%; 
+        position:absolute; 
+        height:100%; 
+        background-color:#999";>
+       <br/><br/><br/>载入中,请等待。。。
+    </div>
+    <p>
+    	<input type="button" value="提交表单" onClick="submitForm">
+    </p>
+</body>
+</html>
