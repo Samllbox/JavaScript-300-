@@ -26,7 +26,7 @@
        <br/><br/><br/>载入中,请等待。。。
     </div>
     <p>
-    	<input type="button" value="提交表单" onClick="submitForm">
+    	<input type="button" value="提交表单" onClick="submitForm()">
     </p>
 </body>
 </html>
