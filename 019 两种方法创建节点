@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>创建dom元素</title>
+<script>
+	function createNew(){
+		//第一种用innerHTML方法
+		var p1 = document.getElementById("p1");
+		p1.innerHTML = "<span>我的dom文本1</span>";
+		//第二种用createElement方法
+		var span = document.createElement("span");
+		span.appendChild(document.createTextNode("我的dom文本2"));
+		var p2 = document.getElementById("p2");
+		p2.appendChild(span);
+		}
+</script>
+</head>
+
+<body>
+	<input type="button" onClick="createNew()" value="创建吧比卡丘">
+    <p id="p1"></p>
+    <p id="p2"></p>
+</body>
+</html>
