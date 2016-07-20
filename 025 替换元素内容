@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>替换元素内容</title>
+<script>
+	function replaceContent(){
+		var myDom = document.getElementById("mydom");
+		myDom.innerHTML = '<span>一句话</span>&nbsp<a>一个链接</a>'
+		}
+</script>
+</head>
+
+<body>
+<input type="button" value="变变变" onClick="replaceContent()">
+<p id="mydom">
+<a>一个链接</a>&nbsp;<span>一句话</span>
+</p>
+</body>
+
+</html>
