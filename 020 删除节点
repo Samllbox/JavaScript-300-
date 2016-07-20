@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>删除节点</title>
+<script>
+	function removeNode(){
+		var del = document.getElementById("del");
+		del.parentNode.removeChild(del);
+		}
+</script>
+</head>
+
+<body style=" text-align:center">
+	<input type="button" onClick="removeNode()" value="删了你">
+	<div>
+    	小样儿
+        <br>
+    	<span id="del">快删我快删我</span>
+    </div>
+</body>
+</html>
