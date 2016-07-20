@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>利用name获取网页部分内容</title>
+
+	<script>
+    	function getName(){
+			var oneName = document.getElementsByName("onename");
+			var str = ""
+			for(var i=0;i<oneName.length;i++){
+				str += oneName[i].tagName;
+				str += ","
+				}
+			alert("两个name的标签是" + str);
+			}
+    </script>
+    
+</head>
+
+<body>
+	<div name="onename">
+    hello
+    </div>
+    <a name="onename">
+    world
+    </a>
+    <input type="button" value="获取name的标签"  onClick="getName()">
+</body>
+</html>
